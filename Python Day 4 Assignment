@@ -1,0 +1,44 @@
+#Assignment 1 > Find all occurrence of substring in the given string
+#"what we think we become; we are Python programmer"
+#Print the index values
+
+string = "what we think we become; we are Python programmer"
+sub = [i for i in range(len(string)) if string.startswith("we", i)]
+print ("Substring is 'we' and the Index values of occurances are: ", sub)
+
+Output: Substring is 'we' and the Index values of occurances are:  [5, 14, 25]
+
+#Assignment 2 > Explain using
+#islower()
+#isupper()
+#with different kinds of strings
+
+string = "Hello World"
+print (string.islower())
+
+Output: False
+
+string = "Hello World"
+print (string.isupper())
+
+Output: False
+
+string = "EARTH"
+print (string.isupper())
+
+Output: True
+
+string = "EARTH 10"
+print (string.isupper())
+
+Output: True
+
+string = "10"
+print (string.isupper())
+
+Output: False
+
+string = "10"
+print (string.islower())
+
+Output: False
